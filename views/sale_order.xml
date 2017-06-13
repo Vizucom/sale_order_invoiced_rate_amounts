@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record id="sale_tree_view_inherit" model="ir.ui.view">
+			<field name="name">sale.order.view.inherit</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_order_tree"/>
+			<field name="arch" type="xml">
+
+				<field name="amount_total" position="after">
+					<field name="invoiced_amount"/>
+					<field name="to_be_invoiced_amount"/>
+				</field>
+
+			</field>
+		</record>
+	</data>
+</openerp>

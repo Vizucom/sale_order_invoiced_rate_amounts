@@ -9,8 +9,8 @@
 			<field name="arch" type="xml">
 
 				<field name="amount_total" position="after">
-					<field name="invoiced_amount"/>
-					<field name="to_be_invoiced_amount"/>
+					<field name="invoiced_amount" sum="Total"/>
+					<field name="to_be_invoiced_amount" sum="Total"/>
 				</field>
 
 			</field>
